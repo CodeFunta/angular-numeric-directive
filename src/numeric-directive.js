@@ -164,7 +164,7 @@
                 if (angular.isUndefined(value)) {
                     value = '';
                 }
-                value = (""+value).replace(decimalSeparator, '.');
+                value = (""+value).replace(decimalSeparator, '.').replace(groupSeparator,'').replace(' ','');
 
                 // Handle leading decimal point, like ".5"
                 if (value.indexOf('.') === 0) {
